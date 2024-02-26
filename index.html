@@ -8,6 +8,7 @@
         <meta name="author" content="Ramón Alberto Gómez Urquídez">
         <link rel="stylesheet" href="./styles/reset.css">
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <title>Steve & Kate's Camp</title>
     </head>
     <body>
@@ -16,42 +17,55 @@
                 <div class="nav-left">
                     <img src="./img/title.png" alt="title">
                 </div>
-                <div class="nav-center">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
+                <ul class="nav-center">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#">LOCATIONS</a></li>
+                    <li><a href="#">TESTIMONIALS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
                 <div class="nav-right">
                     <button>LOG IN</button>
                 </div>
             </nav>
         </header>
         <main>
-            <div class="banner">
-                <img src="./img/banner.png" alt="banner">
-            </div>
+            <div id="banner01" class="banner"></div>
             <section class="section-1">
-                <h1>Here, we put kids in charge.</h1>
-                <h2>Preposterous? Possibly.</h2>
-                <h2>Effective? You betcha.</h2>
-                <p>When you trust kids, they trust themselves. For 44 years, we’ve put kids in charge of their own learning experience. They try, fail, and learn on their own. They learn to trust their own judgment, and tackle the challenges of an ever changing world with creativity and confidence</p>
-                <p>Campers choose minute to minute from a variety of activities including, sewing, stop-motion animation, music, sports & recreation, makers crafts, bread making, and more. They’ll decide what they want to do, and for how long. Our job is to get out of their way, cheerlead creative risks, and provide just enough guidance to make sure nobody does anything totally* asinine.</p>
-                <p class="acclaration">*Totally asinine: By our definition, mistakes aren't asinine. They're how you learn.</p>
-                <aside>
-                    <img src="./img/section1_aside.png" alt="smilling child">
-                    <h3>HOLIDAY CAMPS</h3>
-                    <p>Camp shouldn't have an off-season. Find your local camp for fall, winter, spring & school breaks to learn all about our activities, specials, and more. Camp is for kids ages 4-12.</p>
-                    <button>FIND A HOLIDAY CAMP</button>
-                </aside>
+                <div class="aside-left">
+                    <div class="wrapper-aside-left">
+                        <div class="titles">
+                            <div class="main-title">   
+                                <h1>Here, we put kids in charge.</h1>
+                            </div>
+                            <div class="sub-title">
+                                <h2>Preposterous? Possibly.</h2>
+                                <h2>Effective? You betcha.</h2> 
+                            </div>
+                        </div>
+                        <div class="paragraphs">
+                            <p>When you trust kids, they trust themselves. For 44 years, we've put kids in charge of their own learning experience. They try, fail, and learn on their own. They learn to trust their own judgment, and tackle the challenges of an ever changing world with creativity and confidence.</p>
+                            <p>Campers choose minute to minute from a variety of activities including, sewing, stop-motion animation, music, sports & recreation, makers crafts, bread making, and more. They'll decide what they want to do, and for how long. Our job is to get out of their way, cheerlead creative risks, and provide just enough guidance to make sure nobody does anything totally* asinine.</p>
+                            <p>*Totally asinine: By our definition, mistakes aren't asinine. They're how you learn.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-right">
+                    <div class="wrapper-aside-right">
+                        <img class="small-image" src="./img/section1_aside.png" alt="smilling child">
+                        <h3>HOLIDAY CAMPS</h3>
+                        <p>Camp shouldn't have an off-season. Find your local camp for fall, winter, spring & school breaks to learn all about our activities, specials, and more. Camp is for kids ages 4-12.</p>
+                        <button>FIND A HOLIDAY CAMP</button>
+                    </div>
+                </div>
             </section>
-            <section class="section-2">
-                <img src="./img/section2_banner.png" alt="child playing">
-                <h1>70+ Locations—Probably Near You</h1>
-                <h2>Select a location to learn more about our camps.</h2>
-            </section>
+            <div id="banner02" class="banner section-2">
+                <div class="main-title">
+                    <h1>70+ Locations—Probably Near You</h1>
+                </div>
+                <div class="sub-title">
+                    <h2>Select a location to learn more about our camps.</h2>
+                </div>  
+            </div>
             <div class="section-table">
                 <table>
                     <thead>
@@ -157,52 +171,56 @@
             </section>
         </main>
         <footer>
-            <div class="footer-left">
-                <img src="./img/logo.png" alt="logo">
-                <p>58 West Portal Ave #800</p>
-                <p>San Francisco, CA 94127</p>
-                <ul>
-                    <li><i class="bi bi-facebook"></i></li>
-                    <li><i class="bi bi-instagram"></i></li>
-                    <li><i class="bi bi-youtube"></i></li>
-                </ul>
-            </div>
-            <div class="footer-right">
-                <div class="footer-column">
-                    <p>ABOUT S&K</p>
+            <div class="wrapper-footer">
+                <div class="footer-left">
+                    <img class="icon" src="./img/logo.png" alt="logo">
+                    <address>
+                        <p>58 West Portal Ave #800</p>
+                        <p>San Francisco, CA 94127</p>
+                    </address>
                     <ul>
-                        <li><a href="./philosophy.html">Philosophy</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><i class="bi bi-facebook"></i></li>
+                        <li><i class="bi bi-instagram"></i></li>
+                        <li><i class="bi bi-youtube"></i></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <p>HELPFUL LINKS</p>
-                    <ul>
-                        <li><a href="#">Financial Aid</a></li>
-                        <li><a href="#">Using Bright Horizons</a></li>
-                        <li><a href="#">Back-Up Care</a></li>
-                        <li><a href="#">Email List</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <p>OUR CAMPS</p>
-                    <ul>
-                        <li><a href="#">Summer Camps</a></li>
-                        <li><a href="#">Spring Break Camps</a></li>
-                        <li><a href="#">Winter Break Camps</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <p>LEGAL STUFF</p>
-                    <ul>
-                        <li><a href="#">Liability Waiver</a></li>
-                        <li><a href="#">DMCA</a></li>
-                        <li><a href="#">Steve & Kate's Virtual</a></li>
-                        <li><a href="#">Camp Guidelines & Safety</a></li>
-                    </ul>
+                <div class="footer-right">
+                    <div class="footer-column">
+                        <p>ABOUT S&K</p>
+                        <ul>
+                            <li><a href="./philosophy.html">Philosophy</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <p>HELPFUL LINKS</p>
+                        <ul>
+                            <li><a href="#">Financial Aid</a></li>
+                            <li><a href="#">Using Bright Horizons</a></li>
+                            <li><a href="#">Back-Up Care</a></li>
+                            <li><a href="#">Email List</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <p>OUR CAMPS</p>
+                        <ul>
+                            <li><a href="#">Summer Camps</a></li>
+                            <li><a href="#">Spring Break Camps</a></li>
+                            <li><a href="#">Winter Break Camps</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <p>LEGAL STUFF</p>
+                        <ul>
+                            <li><a href="#">Liability Waiver</a></li>
+                            <li><a href="#">DMCA</a></li>
+                            <li><a href="#">Steve & Kate's Virtual</a></li>
+                            <li><a href="#">Camp Guidelines & Safety</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <p>Copyright © 2024. All Rights Reserved.</p>
