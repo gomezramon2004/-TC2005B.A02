@@ -69,9 +69,40 @@ button {
     cursor: pointer;
 }
 
+table {
+    border-bottom: 0.25rem solid #1C71A1;
+}
+
+tr:nth-child(even){
+    background-color: #D9D9D9;
+}
+
+th {
+    font-family: Assistant;
+    font-weight: 700;
+    color: white;
+    background-color: #1C71A1;
+}
+
+td {
+    font-family: Assistant;
+    font-weight: 400;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
 footer {
     background-color: black;
     color: white;
+    font-family: Assistant;
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding: 2rem 5rem;
 }
 
 address {
@@ -184,6 +215,13 @@ address {
     padding: 5rem;
 }
 
+.section-table {
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+}
+
 .wrapper-footer {
     display: grid;
     grid-template-columns: 2fr 4fr;
@@ -191,7 +229,6 @@ address {
 }
 
 .footer-left {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -205,11 +242,29 @@ address {
 }
 
 .footer-right {
-    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 874px;
+    height: 80%;
+}
+
+.dropdown-list {
+    margin-top: 2rem;
+    line-height: 1.5rem;
 }
 
 .icon {
     width: 10rem;
+}
+
+.gray-text {
+    color: #BDBDBD;
+}
+
+.copyright {
+    text-align: center;
 }
 
 /* ID Styles */
