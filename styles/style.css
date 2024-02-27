@@ -71,6 +71,12 @@ button {
 
 table {
     border-bottom: 0.25rem solid #1C71A1;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+table a {
+    text-decoration: underline;
 }
 
 tr:nth-child(even){
@@ -82,6 +88,7 @@ th {
     font-weight: 700;
     color: white;
     background-color: #1C71A1;
+    text-align: center;
 }
 
 td {
@@ -90,6 +97,14 @@ td {
     text-align: left;
     vertical-align: middle;
     padding-left: 2rem;
+}
+
+thead {
+    height: 3rem;
+}
+
+thead, th {
+    vertical-align: middle;
 }
 
 li {
@@ -219,7 +234,7 @@ address {
     height: 35rem;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    padding: 3rem;
 }
 
 .wrapper-footer {
@@ -257,6 +272,12 @@ address {
 
 .icon {
     width: 10rem;
+}
+
+.icon-svg {
+    mix-blend-mode: multiply;
+    position: relative;
+    left: 5rem;
 }
 
 .gray-text {
