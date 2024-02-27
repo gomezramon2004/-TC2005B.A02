@@ -124,6 +124,24 @@ address {
     line-height: 1.25rem;
 }
 
+label, input {
+    font-family: Assistant;
+    font-weight: 400;
+}
+
+label {
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 5rem;
+    padding-left: 2rem;
+}
+
 /* Class Styles */
 
 .nav-center {
@@ -237,6 +255,74 @@ address {
     padding: 3rem;
 }
 
+.section-3 {
+    background-color: #1C71A1;
+    height: 60rem;
+    font-family: Assistant;
+    font-weight: 400;
+}
+
+.wrapper-text {
+    padding: 7.5rem 55% 7.5rem 7.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;;
+}
+
+.wrapper-text h1 {
+    font-size: 3.25rem;
+}
+
+.wrapper-text h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.card-section {
+    position: relative;
+    bottom: 12rem;
+    left: 25rem;
+    height: 17.5rem;
+    width: 70%;
+    display: flex;
+    gap: 6rem;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.card-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-text {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+.section-4 {
+    display: grid;
+    grid-template-columns: 2fr 2.33fr;
+}
+
+.forms-location {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms-location * {
+    width: 42.5%;
+}
+
 .wrapper-footer {
     display: grid;
     grid-template-columns: 2fr 4fr;
@@ -298,4 +384,49 @@ address {
     background-image: url(../img/section2_banner.png);
     height: 30rem;
     width: auto;
+}
+
+#banner03 {
+    background-image: url(../img/section3_banner.png);
+    height: 40rem;
+}
+
+#banner04 {
+    background-image: url(../img/section4_banner.png);
+    height: 100%;
+}
+
+#card1 {
+    border: 4px solid #20DD1C45;
+}
+
+#card2 {
+    border: 4px solid #E7E991;
+}
+
+#card3 {
+    border: 4px solid #F88484;
+}
+
+#form {
+    height: 45rem;
+    flex-direction: column;
+    background-color: #CECECE;
+    padding: 1rem 5rem 5rem 5rem;
+}
+
+#form h2 {
+    font-size: 3rem;
+    color: #F25757;
+    padding-bottom: 1.5rem;
+}
+
+#form button {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.125rem;
+}
+
+#msg {
+    height: 8rem;
 }
