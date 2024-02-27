@@ -99,12 +99,12 @@ td {
     padding-left: 2rem;
 }
 
-thead {
-    height: 3rem;
-}
-
 thead, th {
     vertical-align: middle;
+}
+
+tbody {
+    height: auto;
 }
 
 li {
