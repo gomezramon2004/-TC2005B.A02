@@ -362,8 +362,6 @@ input {
 
 .icon-svg {
     mix-blend-mode: multiply;
-    position: relative;
-    left: 5rem;
 }
 
 .gray-text {
@@ -429,4 +427,100 @@ input {
 
 #msg {
     height: 8rem;
+}
+
+@media screen and (max-width: 1430px) {
+    .card-section {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav > * {
+        padding: 1rem;
+    }
+
+    .section-1 {
+        grid-template-columns: 1fr; 
+        height: auto; 
+        text-align: center;
+    }
+
+    .wrapper-aside-left {
+        padding: 2rem;
+        gap: 3rem;
+    }
+
+    .paragraphs {
+        padding-left: 0%;
+        text-align: center;
+    }
+
+    .small-image {
+        width: 40%;
+    }
+
+    thead {
+        font-size: 0.75rem;
+    }
+
+    th {
+        padding: 1rem;
+    }
+
+    .wrapper-text {
+        padding-right: 15%;
+    }
+
+    .card * {
+        font-size: 0.75rem;
+    }
+
+    .section-4 {
+        display: flex;
+    }
+
+    .section-4 .aside-left {
+        display: none;
+    }
+
+    .section-4 .aside-right {
+        width: 100%;
+    }
+
+    .wrapper-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper-footer > * {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    nav * {
+        font-size: 1rem;
+    }
+
+    .wrapper-aside-left {
+        padding: 1rem;
+    }
+
+    .card-section {
+        display: none;
+    }
+
+    input {
+        font-size: 0.8rem;
+    }
 }
